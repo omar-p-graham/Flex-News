@@ -18,7 +18,6 @@ const getNews = (country, category) => {
     .request(options)
     .then(function (response) {
       articles.value = response.data
-      console.log(response.data)
     })
     .catch(function (error) {
       console.error(error)
